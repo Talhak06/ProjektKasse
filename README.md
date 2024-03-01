@@ -1,3 +1,1 @@
 # ProjektKasse
-
-Kasse.drawio
