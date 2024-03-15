@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjktKasseContext.Daten;
+using ProjktKasse.Daten;
 
 #nullable disable
 
 namespace ProjektKasse.Migrations
 {
     [DbContext(typeof(ProjktKasseContext))]
-    [Migration("20240315080201_InitialCreate")]
+    [Migration("20240315092812_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JVfzU+iRXMuQ0uKccS8MkxlaNkEyqKpB2nAAOU/FF7+rKwKyQhuaj/gwzR7b6lrSFKHvs3/ivVxsk4VVbFz4XQ==",
+  "dgSpecHash": "bB42OYBhb9z+AsOMbSpLZpnQhE80HRr8+Rl4okmpNyD5wx3aX69CidaG/EZYj/6OCxUZDo9gAp23VD25H16UKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Talha.k14\\source\\repos\\ProjektKasse\\ProjektKasse\\ProjektKasse.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0\\microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
+    "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.0\\microsoft.entityframeworkcore.sqlite.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.0\\microsoft.entityframeworkcore.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.0\\microsoft.entityframeworkcore.tools.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
@@ -23,7 +24,10 @@
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Talha.k14\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
+    "C:\\Users\\Talha.k14\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\Talha.k14\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Talha.k14\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

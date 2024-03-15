@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjktKasseContext.Daten
+
+namespace ProjktKasse.Daten
 {
     // GSOPizzaContext Klasse erbt von DbContext, einem Teil des Entity Frameworks
     internal class ProjktKasseContext : DbContext
@@ -36,6 +37,8 @@ namespace ProjktKasseContext.Daten
             // Überprüfen, ob der optionsBuilder bereits konfiguriert ist, wenn nicht, konfigurieren
             if (!optionsBuilder.IsConfigured)
             {
+                
+     
                 // Konfigurieren der Verwendung der SQLite-Datenbank mit dem angegebenen Verbindungsstring
                 optionsBuilder.UseSqlite(@"Data Source=C:\Users\Talha.k14\source\repos\ProjektKasse\ProjektKasse\Kasse.db");
             }
@@ -44,4 +47,5 @@ namespace ProjktKasseContext.Daten
             base.OnConfiguring(optionsBuilder);
         }
     }
+    
 }
