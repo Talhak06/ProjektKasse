@@ -1,44 +1,59 @@
-﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using ProjektKasse.Daten;
-using ProjektKasse;
+using ProjektKasse.Model;
+
 namespace ProjektKasse
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             using (var context = new ProjktKasseContext())
             {
                 // Produkte automatisch hinzufügen
-                AddDefaultProdukte(context).Wait();
+                await AddDefaultProdukte(context);
 
                 var kasse = new Kasse(context);
 
                 while (true)
                 {
-                    Console.WriteLine("Willkommen im Kassensystem. Bitte wählen Sie eine Option:");
-                    Console.WriteLine("1. Produkt kaufen");
-                    Console.WriteLine("2. Verlassen");
+                    Console.WriteLine("Willkommen im Kassensystem. Bitte wählen Sie die Produkte aus:");
+                    Console.WriteLine("0. Beenden");
 
+                    var produkte = context.Produkte.ToList();
+                    for (int i = 0; i < produkte.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1}. {produkte[i].Name} - {produkte[i].Preis:C}");
+                    }
+
+                    Console.WriteLine("Wählen Sie die Nummer des Produkts (oder 0 zum Beenden):");
                     string eingabe = Console.ReadLine();
 
-                    switch (eingabe)
+                    if (eingabe == "0")
                     {
-                        case "1":
-                            ProduktKaufen(kasse);
-                            break;
-                        case "2":
-                            Console.WriteLine("Auf Wiedersehen!");
-                            return;
-                        default:
-                            Console.WriteLine("Ungültige Eingabe. Bitte wählen Sie eine der verfügbaren Optionen.");
-                            break;
+                        Console.WriteLine("Auf Wiedersehen!");
+                        return;
                     }
+
+                    int produktIndex;
+                    if (!int.TryParse(eingabe, out produktIndex) || produktIndex < 1 || produktIndex > produkte.Count)
+                    {
+                        Console.WriteLine("Ungültige Auswahl. Bitte geben Sie die Nummer des Produkts ein.");
+                        continue;
+                    }
+
+                    var gekauftesProdukt = produkte[produktIndex - 1];
+                    await kasse.Kaufen(new List<Produkt> { gekauftesProdukt });
+
+                    Console.WriteLine($"{gekauftesProdukt.Name} erfolgreich gekauft.");
+
+                    Console.WriteLine("Möchten Sie ein weiteres Produkt kaufen? (ja/nein)");
+                    eingabe = Console.ReadLine();
+
+                    if (eingabe.ToLower() != "ja")
+                        break;
                 }
             }
         }
@@ -55,24 +70,6 @@ namespace ProjektKasse
 
             context.AddRange(produkte);
             await context.SaveChangesAsync();
-        }
-
-        static void ProduktKaufen(Kasse kasse)
-        {
-            Console.WriteLine("Bitte geben Sie den Namen des gekauften Produkts ein:");
-            string produktName = Console.ReadLine();
-
-            Console.WriteLine("Bitte geben Sie den Preis des gekauften Produkts ein:");
-            decimal preis;
-            while (!decimal.TryParse(Console.ReadLine(), out preis) || preis <= 0)
-            {
-                Console.WriteLine("Ungültiger Preis. Bitte geben Sie eine positive Dezimalzahl ein:");
-            }
-
-            var produkt = new Produkt { Name = produktName, Preis = preis };
-            kasse.Kaufen(new List<Produkt> { produkt }).Wait();
-
-            Console.WriteLine("Produkt erfolgreich gekauft.");
         }
     }
 }
