@@ -1,7 +1,11 @@
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using ProjektKasse.Model;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ProjektKasse.Daten;
+using ProjektKasse;
 namespace ProjektKasse
 {
     class Program
