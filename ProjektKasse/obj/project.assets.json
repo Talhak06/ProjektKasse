@@ -1255,25 +1255,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Talha.k14\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\talha\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Talha.k14\\source\\repos\\ProjektKasse\\ProjektKasse\\ProjektKasse.csproj",
+      "projectUniqueName": "C:\\Users\\talha\\Source\\Repos\\Talhak06\\ProjektKasse\\ProjektKasse\\ProjektKasse.csproj",
       "projectName": "ProjektKasse",
-      "projectPath": "C:\\Users\\Talha.k14\\source\\repos\\ProjektKasse\\ProjektKasse\\ProjektKasse.csproj",
-      "packagesPath": "C:\\Users\\Talha.k14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Talha.k14\\source\\repos\\ProjektKasse\\ProjektKasse\\obj\\",
+      "projectPath": "C:\\Users\\talha\\Source\\Repos\\Talhak06\\ProjektKasse\\ProjektKasse\\ProjektKasse.csproj",
+      "packagesPath": "C:\\Users\\talha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\talha\\Source\\Repos\\Talhak06\\ProjektKasse\\ProjektKasse\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Talha.k14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\talha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1282,7 +1280,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1338,7 +1335,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

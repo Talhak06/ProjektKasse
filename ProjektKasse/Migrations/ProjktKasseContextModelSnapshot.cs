@@ -3,13 +3,13 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjktKasse.Daten;
+using ProjektKasse.Daten;
 
 #nullable disable
 
 namespace ProjektKasse.Migrations
 {
-    [DbContext(typeof(ProjktKasseContext))]
+    [DbContext(typeof(ProjektKasseContext))]
     partial class ProjktKasseContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

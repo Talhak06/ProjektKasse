@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ProjktKasse.Daten
+namespace ProjektKasse.Daten
 {
     // GSOPizzaContext Klasse erbt von DbContext, einem Teil des Entity Frameworks
-    internal class ProjktKasseContext : DbContext
+    internal class ProjektKasseContext : DbContext
     {
         // DbSet-Eigenschaften repräsentieren Tabellen in der Datenbank
         // Jede Eigenschaft ist stark typisiert mit einer Modellklasse
@@ -40,7 +40,7 @@ namespace ProjktKasse.Daten
                 
      
                 // Konfigurieren der Verwendung der SQLite-Datenbank mit dem angegebenen Verbindungsstring
-                optionsBuilder.UseSqlite(@"Data Source=C:\Users\Talha.k14\source\repos\ProjektKasse\ProjektKasse\Kasse.db");
+                optionsBuilder.UseSqlite(@"Data Source=C:\Users\talha\Source\Repos\Talhak06\ProjektKasse\ProjektKasse\Kasse.db");
             }
 
             // Immer die Basis-Methode aufrufen, um das Basisverhalten einzuschließen

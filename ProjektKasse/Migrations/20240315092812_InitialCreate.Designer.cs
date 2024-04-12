@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjktKasse.Daten;
+using ProjektKasse.Daten;
 
 #nullable disable
 
 namespace ProjektKasse.Migrations
 {
-    [DbContext(typeof(ProjktKasseContext))]
+    [DbContext(typeof(ProjektKasseContext))]
     [Migration("20240315092812_InitialCreate")]
     partial class InitialCreate
     {
