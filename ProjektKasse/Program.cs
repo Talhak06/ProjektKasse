@@ -36,6 +36,9 @@ class Program
 
                 switch (option)
                 {
+                        //Das Schlüsselwort await wird in C# verwendet, um eine asynchrone Operation auszuführen und auf deren Abschluss zu warten, ohne den aufrufenden Thread zu blockieren. 
+                        //Wenn Sie das Schlüsselwort await verwenden,
+                        //geben Sie an, dass die nächste Anweisung erst ausgeführt werden soll, wenn die asynchrone Operation abgeschlossen ist.
                     case "1": // Produkte anzeigen
                         await ShowProducts(dbContext);
                         break;
